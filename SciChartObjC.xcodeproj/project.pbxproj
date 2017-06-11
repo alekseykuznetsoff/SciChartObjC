@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		861297931EEDD7700093205B /* SciChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861297911EEDD7680093205B /* SciChart.framework */; };
 		861297941EEDD7700093205B /* SciChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 861297911EEDD7680093205B /* SciChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		861297991EEDD8BA0093205B /* KAChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297981EEDD8BA0093205B /* KAChartViewController.m */; };
 		86FEB0961EEDD31C00021184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB0921EEDD31C00021184 /* AppDelegate.m */; };
 		86FEB0971EEDD31C00021184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FEB0931EEDD31C00021184 /* Assets.xcassets */; };
 		86FEB0991EEDD31C00021184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB0951EEDD31C00021184 /* main.m */; };
@@ -32,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		861297911EEDD7680093205B /* SciChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SciChart.framework; sourceTree = "<group>"; };
+		861297971EEDD8BA0093205B /* KAChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAChartViewController.h; sourceTree = "<group>"; };
+		861297981EEDD8BA0093205B /* KAChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAChartViewController.m; sourceTree = "<group>"; };
 		86FEB0761EEDD23A00021184 /* SciChartObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciChartObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FEB0911EEDD31C00021184 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86FEB0921EEDD31C00021184 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +64,15 @@
 				861297911EEDD7680093205B /* SciChart.framework */,
 			);
 			path = Libs;
+			sourceTree = "<group>";
+		};
+		861297961EEDD8AD0093205B /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				861297971EEDD8BA0093205B /* KAChartViewController.h */,
+				861297981EEDD8BA0093205B /* KAChartViewController.m */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 		86FEB06D1EEDD23A00021184 = {
@@ -105,6 +117,7 @@
 		86FEB09A1EEDD3D000021184 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				861297961EEDD8AD0093205B /* Chart */,
 				86FEB09B1EEDD3D000021184 /* LaunchScreen.storyboard */,
 				86FEB09C1EEDD3D000021184 /* Main.storyboard */,
 			);
@@ -184,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861297991EEDD8BA0093205B /* KAChartViewController.m in Sources */,
 				86FEB0961EEDD31C00021184 /* AppDelegate.m in Sources */,
 				86FEB0991EEDD31C00021184 /* main.m in Sources */,
 			);
