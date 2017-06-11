@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		861297931EEDD7700093205B /* SciChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861297911EEDD7680093205B /* SciChart.framework */; };
+		861297941EEDD7700093205B /* SciChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 861297911EEDD7680093205B /* SciChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		86FEB0961EEDD31C00021184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB0921EEDD31C00021184 /* AppDelegate.m */; };
 		86FEB0971EEDD31C00021184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FEB0931EEDD31C00021184 /* Assets.xcassets */; };
 		86FEB0991EEDD31C00021184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB0951EEDD31C00021184 /* main.m */; };
 		86FEB09F1EEDD3D000021184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FEB09B1EEDD3D000021184 /* LaunchScreen.storyboard */; };
 		86FEB0A01EEDD3D000021184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FEB09C1EEDD3D000021184 /* Main.storyboard */; };
-		86FEB0A11EEDD3D000021184 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB09E1EEDD3D000021184 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		861297951EEDD7700093205B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				861297941EEDD7700093205B /* SciChart.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		861297911EEDD7680093205B /* SciChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SciChart.framework; sourceTree = "<group>"; };
 		86FEB0761EEDD23A00021184 /* SciChartObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciChartObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FEB0911EEDD31C00021184 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86FEB0921EEDD31C00021184 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,8 +40,6 @@
 		86FEB0951EEDD31C00021184 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86FEB09B1EEDD3D000021184 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FEB09C1EEDD3D000021184 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		86FEB09D1EEDD3D000021184 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		86FEB09E1EEDD3D000021184 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		86FEB0A21EEDD41C00021184 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,12 +48,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861297931EEDD7700093205B /* SciChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		861297901EEDD7500093205B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				861297911EEDD7680093205B /* SciChart.framework */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
 		86FEB06D1EEDD23A00021184 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +84,7 @@
 			children = (
 				86FEB09A1EEDD3D000021184 /* Screens */,
 				86FEB0901EEDD31C00021184 /* Supporting Files */,
+				861297901EEDD7500093205B /* Libs */,
 			);
 			path = SciChartObjC;
 			sourceTree = "<group>";
@@ -83,8 +107,6 @@
 			children = (
 				86FEB09B1EEDD3D000021184 /* LaunchScreen.storyboard */,
 				86FEB09C1EEDD3D000021184 /* Main.storyboard */,
-				86FEB09D1EEDD3D000021184 /* ViewController.h */,
-				86FEB09E1EEDD3D000021184 /* ViewController.m */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -99,6 +121,7 @@
 				86FEB0721EEDD23A00021184 /* Sources */,
 				86FEB0731EEDD23A00021184 /* Frameworks */,
 				86FEB0741EEDD23A00021184 /* Resources */,
+				861297951EEDD7700093205B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FEB0A11EEDD3D000021184 /* ViewController.m in Sources */,
 				86FEB0961EEDD31C00021184 /* AppDelegate.m in Sources */,
 				86FEB0991EEDD31C00021184 /* main.m in Sources */,
 			);
@@ -267,7 +289,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MU2U9Q7TFR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SciChartObjC/Libs",
+				);
 				INFOPLIST_FILE = "SciChartObjC/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KAD.SciChartObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,7 +306,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MU2U9Q7TFR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SciChartObjC/Libs",
+				);
 				INFOPLIST_FILE = "SciChartObjC/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KAD.SciChartObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
