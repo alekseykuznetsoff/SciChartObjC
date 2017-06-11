@@ -40,17 +40,17 @@
 - (void)loadPointsWithCount:(NSUInteger)count
                    callback:(KACallbackBlock)callback
 {
-    
+    [self.dataProvider loadPointsWithCount:count callback:callback];
 }
 
 - (void)loadDataWithCallback:(KACallbackBlock)callback
 {
-    
+    [self.dataProvider startWithCallback:callback];
 }
 
 - (void)abortLoadingData
 {
-    
+    [self.dataProvider abort];
 }
 
 @end

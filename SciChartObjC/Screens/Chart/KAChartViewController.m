@@ -8,8 +8,11 @@
 
 #import "KAChartViewController.h"
 #import <SciChart/SciChart.h>
+#import "KADataManager.h"
 
 @interface KAChartViewController ()
+
+@property (nonatomic) KADataManager *model;
 
 @property (weak, nonatomic) IBOutlet SCIChartSurfaceView *sciChartSurfaceView;
 
@@ -23,6 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.model = [KADataManager sharedInstance];
+
+    [self.model loadPointsWithCount:30 callback:^(NSArray *array, NSError *error) {
+        NSLog(@"%@", array);
+    }];
 }
 
 @end
