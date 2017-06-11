@@ -10,6 +10,9 @@
 		861297931EEDD7700093205B /* SciChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861297911EEDD7680093205B /* SciChart.framework */; };
 		861297941EEDD7700093205B /* SciChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 861297911EEDD7680093205B /* SciChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		861297991EEDD8BA0093205B /* KAChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297981EEDD8BA0093205B /* KAChartViewController.m */; };
+		861297A01EEDDA620093205B /* KADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8612979F1EEDDA620093205B /* KADataManager.m */; };
+		861297A31EEDDA730093205B /* KAPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297A21EEDDA730093205B /* KAPoint.m */; };
+		861297A61EEDDA8A0093205B /* KAPointsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297A51EEDDA8A0093205B /* KAPointsProvider.m */; };
 		86FEB0961EEDD31C00021184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB0921EEDD31C00021184 /* AppDelegate.m */; };
 		86FEB0971EEDD31C00021184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FEB0931EEDD31C00021184 /* Assets.xcassets */; };
 		86FEB0991EEDD31C00021184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB0951EEDD31C00021184 /* main.m */; };
@@ -35,6 +38,12 @@
 		861297911EEDD7680093205B /* SciChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SciChart.framework; sourceTree = "<group>"; };
 		861297971EEDD8BA0093205B /* KAChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAChartViewController.h; sourceTree = "<group>"; };
 		861297981EEDD8BA0093205B /* KAChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAChartViewController.m; sourceTree = "<group>"; };
+		8612979E1EEDDA620093205B /* KADataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KADataManager.h; sourceTree = "<group>"; };
+		8612979F1EEDDA620093205B /* KADataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KADataManager.m; sourceTree = "<group>"; };
+		861297A11EEDDA730093205B /* KAPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAPoint.h; sourceTree = "<group>"; };
+		861297A21EEDDA730093205B /* KAPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAPoint.m; sourceTree = "<group>"; };
+		861297A41EEDDA8A0093205B /* KAPointsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAPointsProvider.h; sourceTree = "<group>"; };
+		861297A51EEDDA8A0093205B /* KAPointsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAPointsProvider.m; sourceTree = "<group>"; };
 		86FEB0761EEDD23A00021184 /* SciChartObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciChartObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FEB0911EEDD31C00021184 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86FEB0921EEDD31C00021184 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +84,43 @@
 			path = Chart;
 			sourceTree = "<group>";
 		};
+		8612979A1EEDDA230093205B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8612979B1EEDDA4D0093205B /* DataManager */,
+				8612979C1EEDDA4D0093205B /* Point */,
+				8612979D1EEDDA4D0093205B /* PointsProvider */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8612979B1EEDDA4D0093205B /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				8612979E1EEDDA620093205B /* KADataManager.h */,
+				8612979F1EEDDA620093205B /* KADataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		8612979C1EEDDA4D0093205B /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				861297A11EEDDA730093205B /* KAPoint.h */,
+				861297A21EEDDA730093205B /* KAPoint.m */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		8612979D1EEDDA4D0093205B /* PointsProvider */ = {
+			isa = PBXGroup;
+			children = (
+				861297A41EEDDA8A0093205B /* KAPointsProvider.h */,
+				861297A51EEDDA8A0093205B /* KAPointsProvider.m */,
+			);
+			path = PointsProvider;
+			sourceTree = "<group>";
+		};
 		86FEB06D1EEDD23A00021184 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +140,7 @@
 		86FEB0781EEDD23A00021184 /* SciChartObjC */ = {
 			isa = PBXGroup;
 			children = (
+				8612979A1EEDDA230093205B /* Data */,
 				86FEB09A1EEDD3D000021184 /* Screens */,
 				86FEB0901EEDD31C00021184 /* Supporting Files */,
 				861297901EEDD7500093205B /* Libs */,
@@ -198,8 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				861297991EEDD8BA0093205B /* KAChartViewController.m in Sources */,
+				861297A61EEDDA8A0093205B /* KAPointsProvider.m in Sources */,
+				861297A31EEDDA730093205B /* KAPoint.m in Sources */,
 				86FEB0961EEDD31C00021184 /* AppDelegate.m in Sources */,
 				86FEB0991EEDD31C00021184 /* main.m in Sources */,
+				861297A01EEDDA620093205B /* KADataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

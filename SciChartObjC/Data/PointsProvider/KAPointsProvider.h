@@ -1,14 +1,13 @@
 //
-//  Macro.h
+//  KAPointsProvider.h
 //  SciChartObjC
 //
 //  Created by Kuznetsov Aleksey on 11.06.17.
 //  Copyright © 2017 Kuznetsov Aleksey. All rights reserved.
 //
 
-#ifndef Macro_h
-#define Macro_h
+#import <Foundation/Foundation.h>
 
-typedef void (^KACallbackBlock)(NSArray *array, NSError *error);
+@interface KAPointsProvider : NSObject
 
-#endif /* Macro_h */
+@end
