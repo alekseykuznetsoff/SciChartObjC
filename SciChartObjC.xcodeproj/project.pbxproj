@@ -13,6 +13,10 @@
 		861297A01EEDDA620093205B /* KADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8612979F1EEDDA620093205B /* KADataManager.m */; };
 		861297A31EEDDA730093205B /* KAPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297A21EEDDA730093205B /* KAPoint.m */; };
 		861297A61EEDDA8A0093205B /* KAPointsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297A51EEDDA8A0093205B /* KAPointsProvider.m */; };
+		861297AB1EEE669B0093205B /* SCIAxisMarkerAnnotation+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297AA1EEE669B0093205B /* SCIAxisMarkerAnnotation+Extensions.m */; };
+		861297AE1EEE69130093205B /* SCIChartSurface+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297AD1EEE69130093205B /* SCIChartSurface+Extensions.m */; };
+		861297B11EEE6AC90093205B /* SCIFastMountainRenderableSeries+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297B01EEE6AC90093205B /* SCIFastMountainRenderableSeries+Extensions.m */; };
+		861297B41EEE6BCD0093205B /* SCIXyDataSeries+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 861297B31EEE6BCD0093205B /* SCIXyDataSeries+Extensions.m */; };
 		86FEB0961EEDD31C00021184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB0921EEDD31C00021184 /* AppDelegate.m */; };
 		86FEB0971EEDD31C00021184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FEB0931EEDD31C00021184 /* Assets.xcassets */; };
 		86FEB0991EEDD31C00021184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FEB0951EEDD31C00021184 /* main.m */; };
@@ -44,6 +48,14 @@
 		861297A21EEDDA730093205B /* KAPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAPoint.m; sourceTree = "<group>"; };
 		861297A41EEDDA8A0093205B /* KAPointsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAPointsProvider.h; sourceTree = "<group>"; };
 		861297A51EEDDA8A0093205B /* KAPointsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAPointsProvider.m; sourceTree = "<group>"; };
+		861297A91EEE669B0093205B /* SCIAxisMarkerAnnotation+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCIAxisMarkerAnnotation+Extensions.h"; sourceTree = "<group>"; };
+		861297AA1EEE669B0093205B /* SCIAxisMarkerAnnotation+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCIAxisMarkerAnnotation+Extensions.m"; sourceTree = "<group>"; };
+		861297AC1EEE69130093205B /* SCIChartSurface+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCIChartSurface+Extensions.h"; sourceTree = "<group>"; };
+		861297AD1EEE69130093205B /* SCIChartSurface+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCIChartSurface+Extensions.m"; sourceTree = "<group>"; };
+		861297AF1EEE6AC90093205B /* SCIFastMountainRenderableSeries+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCIFastMountainRenderableSeries+Extensions.h"; sourceTree = "<group>"; };
+		861297B01EEE6AC90093205B /* SCIFastMountainRenderableSeries+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCIFastMountainRenderableSeries+Extensions.m"; sourceTree = "<group>"; };
+		861297B21EEE6BCD0093205B /* SCIXyDataSeries+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCIXyDataSeries+Extensions.h"; sourceTree = "<group>"; };
+		861297B31EEE6BCD0093205B /* SCIXyDataSeries+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCIXyDataSeries+Extensions.m"; sourceTree = "<group>"; };
 		86FEB0761EEDD23A00021184 /* SciChartObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciChartObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FEB0911EEDD31C00021184 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86FEB0921EEDD31C00021184 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +133,29 @@
 			path = PointsProvider;
 			sourceTree = "<group>";
 		};
+		861297A71EEE66490093205B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				861297A81EEE66490093205B /* SciChart */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		861297A81EEE66490093205B /* SciChart */ = {
+			isa = PBXGroup;
+			children = (
+				861297A91EEE669B0093205B /* SCIAxisMarkerAnnotation+Extensions.h */,
+				861297AA1EEE669B0093205B /* SCIAxisMarkerAnnotation+Extensions.m */,
+				861297AC1EEE69130093205B /* SCIChartSurface+Extensions.h */,
+				861297AD1EEE69130093205B /* SCIChartSurface+Extensions.m */,
+				861297AF1EEE6AC90093205B /* SCIFastMountainRenderableSeries+Extensions.h */,
+				861297B01EEE6AC90093205B /* SCIFastMountainRenderableSeries+Extensions.m */,
+				861297B21EEE6BCD0093205B /* SCIXyDataSeries+Extensions.h */,
+				861297B31EEE6BCD0093205B /* SCIXyDataSeries+Extensions.m */,
+			);
+			path = SciChart;
+			sourceTree = "<group>";
+		};
 		86FEB06D1EEDD23A00021184 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +175,7 @@
 		86FEB0781EEDD23A00021184 /* SciChartObjC */ = {
 			isa = PBXGroup;
 			children = (
+				861297A71EEE66490093205B /* Categories */,
 				8612979A1EEDDA230093205B /* Data */,
 				86FEB09A1EEDD3D000021184 /* Screens */,
 				86FEB0901EEDD31C00021184 /* Supporting Files */,
@@ -246,10 +282,14 @@
 			files = (
 				861297991EEDD8BA0093205B /* KAChartViewController.m in Sources */,
 				861297A61EEDDA8A0093205B /* KAPointsProvider.m in Sources */,
+				861297B11EEE6AC90093205B /* SCIFastMountainRenderableSeries+Extensions.m in Sources */,
 				861297A31EEDDA730093205B /* KAPoint.m in Sources */,
 				86FEB0961EEDD31C00021184 /* AppDelegate.m in Sources */,
+				861297AE1EEE69130093205B /* SCIChartSurface+Extensions.m in Sources */,
+				861297AB1EEE669B0093205B /* SCIAxisMarkerAnnotation+Extensions.m in Sources */,
 				86FEB0991EEDD31C00021184 /* main.m in Sources */,
 				861297A01EEDDA620093205B /* KADataManager.m in Sources */,
+				861297B41EEE6BCD0093205B /* SCIXyDataSeries+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
